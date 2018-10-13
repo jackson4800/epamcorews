@@ -32,6 +32,8 @@ namespace EPAM.CoreWorkshop.NorthwindLib.Migrations
 
                     b.Property<string>("Description");
 
+                    b.Property<bool>("Gay");
+
                     b.Property<string>("Owner");
 
                     b.Property<byte[]>("Picture");

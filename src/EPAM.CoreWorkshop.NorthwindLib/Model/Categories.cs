@@ -17,5 +17,6 @@ namespace EPAM.CoreWorkshop.NorthwindLib.Model
 
         public ICollection<Products> Products { get; set; }
         public string Owner { get; set; }
+        public bool Gay { get; set; }
     }
 }
