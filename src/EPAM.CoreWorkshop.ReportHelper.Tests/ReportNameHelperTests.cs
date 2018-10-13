@@ -1,5 +1,6 @@
 using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Threading;
 
 namespace EPAM.Core.ReportHelper.Tests
 {
@@ -15,6 +16,12 @@ namespace EPAM.Core.ReportHelper.Tests
             var result = ReportNameHelper.NormalizeFileName(name, repl);
 
             result.Should().BeEquivalentTo(expected);
+        }
+
+        [AssemblyInitialize]
+        public static void Init(TestContext context)
+        {
+            Thread.Sleep(30 * 1000);
         }
     }
 }
